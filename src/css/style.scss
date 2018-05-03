@@ -1,0 +1,181 @@
+@charset 'UTF-8';
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: '黑体';
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 0.16px;
+    background: #ccc;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0.45rem;
+    header {
+        width: 100%;
+        height: 0.85rem;
+        line-height: 0.45rem;
+        background: red;
+        padding: 0.2rem;
+        display: flex;
+        .add {
+            width: 30%;
+            line-height: 0.45rem;
+            font-size: 0.16rem;
+            color: #fff;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            -webkit-line-clamp: 1;
+        }
+        label {
+            flex: 1;
+            text-align: center;
+            input {
+                width: 85%;
+                height: 0.3rem;
+                border-radius: 0.3rem;
+                border: 0;
+                text-indent: 0.1rem;
+            }
+        }
+    }
+    .tit-list {
+        width: 100%;
+        background: #fff;
+        padding: 0.15rem 0;
+        .li-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 20%;
+                text-align: center;
+                margin: 0.1rem 0;
+                dt {
+                    margin: 0 auto;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    line-height: 0.5rem;
+                    border-radius: 50%;
+                    background: red;
+                    i {
+                        color: #fff;
+                        font-size: 0.16rem;
+                    }
+                }
+                dd {
+                    padding: 0.1rem 0;
+                    text-align: center;
+                    font-size: 0.16rem;
+                    color: rgb(80, 80, 80);
+                }
+            }
+        }
+        .li-list-2 {
+            dl {
+                dt {
+                    background: yellow;
+                }
+            }
+        }
+    }
+    section {
+        margin-top: 0.05rem;
+        background: #fff;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        .gohome {
+            width: 100%;
+            padding: 0.1rem;
+            h1 {
+                height: 0.45rem;
+                line-height: 0.45rem;
+                text-align: center;
+                font-size: 0.18rem;
+                color: rgb(85, 85, 85);
+            }
+        }
+        .house {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .home-list {
+            display: flex;
+            li {
+                width: 1.61rem;
+                background: rgb(238, 238, 238);
+                border: 0.01rem solid #ccc;
+                margin: 0 0.05rem;
+                flex-shrink: 0;
+                .tit1 {
+                    width: 100%;
+                    margin-top: 0.2rem;
+                    text-align: center;
+                    font-size: 0.18rem;
+                    font-weight: bold;
+                }
+                .tit2 {
+                    font-size: 0.16rem;
+                    color: rgb(63, 63, 63);
+                    text-align: center;
+                    line-height: 0.3rem;
+                }
+                .img {
+                    text-align: center;
+                    img {
+                        width: 30%;
+                        height: 30%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: 0.8rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        background: #fff;
+        padding: 0 0.1rem;
+        border-top: 0.01rem solid #ccc;
+        dl {
+            width: 25%;
+            text-align: center;
+            dt {
+                margin-top: 0.1rem;
+                i {
+                    font-size: 0.3rem;
+                }
+            }
+            dd {
+                font-size: 0.16rem;
+                margin-top: 0.05rem;
+            }
+        }
+    }
+}
